@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vicidial 12 Modern Operations Suite</title>
+    <!-- Personalizzazione tema Vicidial 12: reindirizzamento automatico alla cartella admin personalizzata -->
+    <script>
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '') {
+        document.write('<META HTTP-EQUIV=REFRESH CONTENT="1; URL=/admin/welcome.php">');
+      }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+    <!-- Schermata di trasferimento visualizzata all'apertura della pagina principale -->
+    <div id="vicidial-transfer-screen" style="display: none; min-height: 100vh; flex-direction: column; align-items: center; justify-content: center; background-color: #090d16; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif;">
+      <div style="text-align: center; max-width: 440px; padding: 2.5rem; background: #111827; border: 1px solid #1f2937; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7);">
+        <div style="width: 52px; height: 52px; border: 4px solid #3b82f6; border-top-color: transparent; border-radius: 50%; animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite; margin: 0 auto 1.75rem;"></div>
+        <div style="display: inline-block; padding: 0.25rem 0.75rem; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 9999px; font-size: 0.75rem; font-weight: 600; color: #60a5fa; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">
+          Vicidial 12 Cloud Edition
+        </div>
+        <h1 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem; color: #ffffff; letter-spacing: -0.025em;">Trasferimento Sessione Admin</h1>
+        <p style="font-size: 1.15rem; color: #e2e8f0; font-weight: 500; margin-bottom: 0.5rem;">Per favore aspetta mentre vieni trasferito!</p>
+        <p style="font-size: 0.85rem; color: #64748b;">Caricamento layout intuitivo e flussi di lavoro ottimizzati /admin/welcome.php</p>
+      </div>
+    </div>
+    <style>
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+    <script>
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '') {
+        document.getElementById('vicidial-transfer-screen').style.display = 'flex';
+      }
+    </script>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

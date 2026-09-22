@@ -1,0 +1,6 @@
+{
+  "name": "Vicidial 12 Modern Theme Suite",
+  "description": "Tema moderno e intuitivo per Vicidial 12 con portale Admin, Interfaccia Agente agc ottimizzata, modulo reportistica VERMNEW con export PDF/CSV, notifiche push e integrazioni CRM API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
